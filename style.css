@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+:root {
+  /* COLORS */
+  --jea-bg-color: white;
+  --jea-button-bg-color: black;
+  --jea-input-bg-color: #ececec;
+  --jea-button-bg-color-secondary: #ff0000;
+
+  /* SPACINGS */
+
+  /* RADIUS */
+  --jea-radius-primary: 30px;
+  --jea-radius-secundary: 15px;
+
+  /* PADDING */
+  --jea-padding-s: 10px;
+  --jea-padding-m: 20px;
+  --jea-padding-l: 40px;
+  --jea-padding-xl: 50px;
+
+  /* MARGIN */
+  --jea-margin-s: 10px;
+  --jea-margin-m: 20px;
+  --jea-margin-l: 30px;
+  --jea-margin-xl: 40px;
+
+  /* GAP */
+  --jea-gap-s: 5px;
+  --jea-gap-m: 10px;
+  --jea-gap-l: 15px;
+  --jea-gap-xl: 20px;
+}
+
+.display-flex {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: var(--jea-gap-m);
+}

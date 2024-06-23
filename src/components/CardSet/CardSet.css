@@ -1,0 +1,5 @@
+#Cards {
+  flex-wrap: wrap;
+  gap: var(--jea-gap-xl);
+  margin: var(--jea-margin-m) var(--jea-margin-s);
+}

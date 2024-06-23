@@ -1,0 +1,69 @@
+#header {
+  width: 100svw;
+  height: 4rem;
+  padding: var(--jea-padding-m);
+}
+
+.MenuOption {
+  width: 25%;
+  list-style: none;
+  display: none;
+}
+
+.MenuOption > li {
+  padding: var(--jea-padding-s) var(--jea-padding-m);
+}
+
+.MenuOption :first-child {
+  border-radius: var(--jea-radius-primary);
+  background-color: var(--jea-button-bg-color);
+  color: white;
+}
+
+#SearchBox {
+  width: 50%;
+  justify-content: start;
+  background-color: var(--jea-input-bg-color);
+  padding: var(--jea-padding-s) var(--jea-padding-m);
+  border-radius: var(--jea-radius-primary);
+}
+
+#SearchBox > input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+}
+
+#SecondaryMenu > * {
+  height: 35px;
+}
+
+#SecondaryMenu :last-child {
+  height: 40px;
+  border-radius: 100%;
+  background-color: var(--jea-input-bg-color);
+  padding: 5px;
+}
+
+#header > img {
+  cursor: pointer;
+}
+
+@media (max-width: 1250px) {
+  #header > .MenuOption {
+    display: none;
+  }
+  #SearchBox {
+    width: 60%;
+  }
+}
+
+@media (max-width: 650px) {
+  #SecondaryMenu :not(:last-child) {
+    display: none;
+  }
+  #SearchBox {
+    width: 70%;
+  }
+}

@@ -1,0 +1,17 @@
+#alert {
+  text-align: center;
+  background-color: var(--jea-input-bg-color);
+  padding: var(--jea-padding-l);
+}
+
+#alert > * {
+  font-size: x-large;
+  font-style: italic;
+  font-weight: 700;
+}
+
+@media (max-width: 650px) {
+  #alert > * {
+    font-size: small;
+  }
+}
